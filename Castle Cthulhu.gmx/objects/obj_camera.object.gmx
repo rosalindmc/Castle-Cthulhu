@@ -54,10 +54,10 @@ mp_grid_add_instances(global.grid,obj_terrain,false)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if instance_exists(obj_char)
+            <string>if instance_exists(global.pc)
 {
-ix = (obj_char.x+mouse_x)*.5
-iy = (obj_char.y+mouse_y)*.5
+ix = (global.pc.x+mouse_x)*.5
+iy = (global.pc.y+mouse_y)*.5
 x = round(((ix+x)*.5)-shake+random(shake*2))
 y = round(((iy+y)*.5)-shake+random(shake*2))
 }
@@ -94,6 +94,10 @@ shake = 0
             <kind>1</kind>
             <string>//Temp Line
 draw_sprite(spr_reticle,0,mouse_x,mouse_y)
+draw_text(x,y,x)
+draw_text(x,y+30,view_hview[0])
+draw_text(x,y+60,global.pc.x)
+
 
 draw_sprite_ext(spr_reticle2,0,mouse_x-kick,mouse_y-kick,1,1,0,c_white,1)
 draw_sprite_ext(spr_reticle2,0,mouse_x-kick,mouse_y+kick,1,1,90,c_white,1)

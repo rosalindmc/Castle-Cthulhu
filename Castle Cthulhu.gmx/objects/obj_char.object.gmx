@@ -6,7 +6,7 @@
   <depth>0</depth>
   <persistent>0</persistent>
   <parentName>obj_unit</parentName>
-  <maskName>&lt;undefined&gt;</maskName>
+  <maskName>spr_mask</maskName>
   <events>
     <event eventtype="0" enumb="0">
       <action>
@@ -25,7 +25,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>scr_charInitialize()
+            <string>//Initialize Vital Variables
+scr_charInitialize()
+
+//Temp: Establish this actor as the pc
 scr_pcInitialize()
 </string>
           </argument>
@@ -106,7 +109,7 @@ script_execute(scr_humanoidIdle,animStep[0])
 scr_moveStep()
 scr_charStep()
 
-obj_camera.kick = kick
+depth = -y
 </string>
           </argument>
         </arguments>
@@ -131,7 +134,6 @@ obj_camera.kick = kick
             <kind>1</kind>
             <string>scr_playerControl()
 scr_facing()
-depth = -y
 </string>
           </argument>
         </arguments>

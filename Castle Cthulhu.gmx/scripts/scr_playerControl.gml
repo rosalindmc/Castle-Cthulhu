@@ -20,6 +20,8 @@ key_inv[2] = keyboard_check_pressed(ord("2"))
 key_inv[3] = keyboard_check_pressed(ord("3"))
 key_inv[4] = keyboard_check_pressed(ord("4"))
 
+//Player Lighting Step
+scr_playerLighting()
 
 //Sprint Control
 if key_sprint = true and sp > 0
@@ -58,3 +60,6 @@ repeat(4)
     }
 i += 1
 }
+
+//Adjust Camera
+obj_camera.kick = kick

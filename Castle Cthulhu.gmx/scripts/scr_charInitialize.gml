@@ -7,9 +7,9 @@ accel = .3
 
 //Vital
 hp = 8
-hpmax = 8
+hpMax = 8
 sp = 4
-spmax = 4
+spMax = 4
 
 //Core
 canAct = true
@@ -24,8 +24,10 @@ targetY = y
 myPath = path_add()
 pc = 0
 h = 0
+fh = 0
 grounded = true
 dTerrain = false
+fid = -4
 
 //Attributes
 atrVitality = 4

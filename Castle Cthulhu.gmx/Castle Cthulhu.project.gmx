@@ -67,6 +67,7 @@
     </scripts>
     <scripts name="Player">
       <script>scripts\scr_playerControl.gml</script>
+      <script>scripts\scr_playerLighting.gml</script>
     </scripts>
     <scripts name="Projectile">
       <script>scripts\scr_projectile_step.gml</script>
@@ -90,6 +91,9 @@
       <script>scripts\scr_initializeFloortile.gml</script>
       <script>scripts\scr_vertical_ramp.gml</script>
       <script>scripts\scr_floor_draw.gml</script>
+    </scripts>
+    <scripts name="Hud">
+      <script>scripts\draw_uiHealthbar.gml</script>
     </scripts>
   </scripts>
   <fonts name="fonts">
@@ -117,7 +121,8 @@
   <rooms name="rooms">
     <room>rooms\rom_game</room>
   </rooms>
-  <constants number="1">
+  <constants number="2">
+    <constant name="sightRange">25</constant>
     <constant name="metre">10</constant>
   </constants>
   <help>

@@ -42,7 +42,7 @@ bodyY = round(hipsY+lengthdir_y(hipsHeight-hipsBounce,hipsRot+90))
 headX = round(bodyX+lengthdir_x(bodyHeight,bodyRot+90))
 headY = round(bodyY+lengthdir_y(bodyHeight,bodyRot+90))
 
-draw_sprite_ext(charSprite,hipsImage,hipsX,hipsY,facingH,1,hipsRot,c_white,1)
+draw_sprite_ext(charSprite,hipsImage,round(hipsX),round(hipsY),facingH,1,hipsRot,c_white,1)
 draw_sprite_ext(charSprite,bodyImage+facingV,round(bodyX),round(bodyY),facingH,1,bodyRot,c_white,1)
 draw_sprite_ext(charSprite,headImage+facingV,round(headX),round(headY),facingH,1,headRot,c_white,1)
 break

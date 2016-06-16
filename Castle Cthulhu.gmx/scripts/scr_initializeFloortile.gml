@@ -11,6 +11,8 @@ rampAdj = false
 level = 1
 w = 80
 
+losVis = true
+
 //Ramp
 rampDir = 1
 topH = 0
