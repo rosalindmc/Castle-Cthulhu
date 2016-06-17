@@ -95,6 +95,9 @@
     <scripts name="Hud">
       <script>scripts\draw_uiHealthbar.gml</script>
     </scripts>
+    <scripts name="Map Gen">
+      <script>scripts\scr_castleGen.gml</script>
+    </scripts>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_basic</font>
@@ -116,9 +119,11 @@
       <object>objects\obj_control</object>
       <object>objects\obj_item</object>
       <object>objects\obj_itemCarried</object>
+      <object>objects\obj_castleGen</object>
     </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rom_testCastle</room>
     <room>rooms\rom_game</room>
   </rooms>
   <constants number="2">

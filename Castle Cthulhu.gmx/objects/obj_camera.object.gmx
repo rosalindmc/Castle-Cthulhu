@@ -94,9 +94,7 @@ shake = 0
             <kind>1</kind>
             <string>//Temp Line
 draw_sprite(spr_reticle,0,mouse_x,mouse_y)
-draw_text(x,y,x)
-draw_text(x,y+30,view_hview[0])
-draw_text(x,y+60,global.pc.x)
+draw_text(x,y,fps)
 
 
 draw_sprite_ext(spr_reticle2,0,mouse_x-kick,mouse_y-kick,1,1,0,c_white,1)

@@ -2,6 +2,7 @@
 movement = 16
 hspd = 0
 vspd = 0
+zspd = 0
 fric = 25
 accel = .3
 
