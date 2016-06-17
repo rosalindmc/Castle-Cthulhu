@@ -3,6 +3,7 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
+  <datafiles number="118" name="datafiles"/>
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
@@ -123,6 +124,7 @@
     </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rom_landingMenu</room>
     <room>rooms\rom_testCastle</room>
     <room>rooms\rom_game</room>
   </rooms>
