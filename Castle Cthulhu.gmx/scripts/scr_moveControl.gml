@@ -16,21 +16,21 @@ if sprinting = true
 if canMove = true and grounded = true
 {
     //Horizontal Movement
-    if key_left-key_right = 1
+    if leftKey-rightKey = 1
     {
         hspd = max(-moveT,hspd-(moveT*accel))
     }
-    else if key_left-key_right = -1
+    else if leftKey-rightKey = -1
     {
         hspd = min(moveT,hspd+(moveT*accel))
     }
     
     //Vertical Movement
-    if key_up-key_down = 1
+    if upKey-downKey = 1
     {
         vspd = max(-moveT,vspd-(moveT*accel))
     }
-    else if key_up-key_down = -1
+    else if upKey-downKey = -1
     {
         vspd = min(moveT,vspd+(moveT*accel))
     }

@@ -1,30 +1,33 @@
 //Move Control
-key_up = keyboard_check(ord("W"))
-key_left = keyboard_check(ord("A"))
-key_down = keyboard_check(ord("S"))
-key_right = keyboard_check(ord("D"))
+upKey = keyboard_check(global.upKey)
+leftKey = keyboard_check(global.leftKey)
+downKey = keyboard_check(global.downKey)
+rightKey = keyboard_check(global.rightKey)
 
-key_lftclick = mouse_check_button(mb_left)
-key_rgtclick = mouse_check_button(mb_right)
-key_lftclicked = mouse_check_button_pressed(mb_left)
-key_rgtclicked = mouse_check_button_pressed(mb_right)
-key_dodge = keyboard_check_pressed(vk_space)
-key_sprint = keyboard_check(vk_shift)
-key_interact = keyboard_check_pressed(ord("E"))
-key_reload = keyboard_check_pressed(ord("R"))
-key_drop = keyboard_check_pressed(ord("F"))
-key_sneak = keyboard_check_pressed(ord("C"))
+lftclickKey = mouse_check_button(mb_left)
+rgtclickKey = mouse_check_button(mb_right)
+lftclickedKey = mouse_check_button_pressed(mb_left)
+rgtclickedKey = mouse_check_button_pressed(mb_right)
+dodgeKey = keyboard_check_pressed(global.dodgeKey)
+sprintKey = keyboard_check(global.sprintKey)
+interactKey = keyboard_check_pressed(global.interactKey)
+reloadKey = keyboard_check_pressed(global.reloadKey)
+throwKey = keyboard_check_pressed(global.throwKey)
+sneakKey = keyboard_check_pressed(global.sneakKey)
+emptyKey = keyboard_check(global.emptyKey)
 
-key_inv[1] = keyboard_check_pressed(ord("1"))
-key_inv[2] = keyboard_check_pressed(ord("2"))
-key_inv[3] = keyboard_check_pressed(ord("3"))
-key_inv[4] = keyboard_check_pressed(ord("4"))
+i = 1
+repeat(10)
+{
+itemKey[i] = keyboard_check_pressed(global.itemKey[i])
+i += 1
+}
 
 //Player Lighting Step
 scr_playerLighting()
 
 //Sprint Control
-if key_sprint = true and sp > 0
+if sprintKey = true and sp > 0
 {
     sprinting = true
 }
@@ -37,13 +40,13 @@ else
 scr_moveControl()
 
 //Dodge Control
-if key_dodge = true and can_move = true and sp >= dodgecost and point_distance(x,y,pointx,pointy) > 5
+if dodgeKey = true and canMove = true and sp >= dodgeCost and point_distance(x,y,pointx,pointy) > 5
 {
 scr_dodge()  
 }
 
 //Interact
-if key_interact = true
+if interactKey = true
 {
 scr_interact()  
 }
@@ -54,9 +57,9 @@ scr_interact()
 i = 1
 repeat(4)
 {
-    if key_inv[i] = true and canAttack = true and canAct = true
+    if itemKey[i] = true and canAttack = true and canAct = true
     {
-    inv_select = i
+    invSelect = i
     }
 i += 1
 }

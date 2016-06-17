@@ -1,5 +1,5 @@
 //Apply Friction
-if key_left-key_right = 0 or canMove = false
+if leftKey-rightKey = 0 or canMove = false
 {
     if hspd > 0 
     {
@@ -11,7 +11,7 @@ if key_left-key_right = 0 or canMove = false
     }
 }
 
-if key_up-key_down = 0 or canMove = false
+if upKey-downKey = 0 or canMove = false
 {
     if vspd > 0
     {

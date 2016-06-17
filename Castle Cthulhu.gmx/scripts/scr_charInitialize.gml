@@ -62,3 +62,4 @@ itemRot = 0
 
 //Combat
 kick = 0
+dodgeCost = 1
