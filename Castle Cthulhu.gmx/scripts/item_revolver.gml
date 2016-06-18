@@ -4,6 +4,12 @@ case 0:     //Object Initialize
 itemType = item_revolver
 name = "Revolver"
 sprite_index = spr_revolver
+
+use[1] = scr_fire
+use[2] = scr_melee
+
+muzzleFlash = spr_muzzle
+bLength = 6
 break
 
 case 1:

@@ -1,5 +1,6 @@
 if instance_exists(owner)
 {
+f = round(owner.facing/15)*15
     if slot = owner.invSelect
     {
     inHand = true
@@ -13,8 +14,8 @@ if instance_exists(owner)
     else
     {
     inHand = false
-    x = round(( ( (owner.x+(lengthdir_x (1,owner.facing+ (15* (slot+8) ) ) ) ) *3) +x)/4)
-    y = round(( ( (owner.y+(lengthdir_y (1,owner.facing+ (15* (slot+8) ) ) ) ) *3) +y)/4)
+    x = round(( ( (owner.x+(lengthdir_x (1,f+ (15* (slot+8) ) ) ) ) *3) +x)/4)
+    y = round(( ( (owner.y+(lengthdir_y (1,f+ (15* (slot+8) ) ) ) ) *3) +y)/4)
     image_angle = 270+(owner.facingH*(-45+(-5*slot)+abs(angle_difference(270,owner.facing)*.25)))
     image_yscale = owner.facingH
     image_index = 1

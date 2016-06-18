@@ -1,3 +1,4 @@
+/*Disabled for testing
 if instance_exists(fid)
 {
 global.x = fid.x

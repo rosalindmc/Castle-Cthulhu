@@ -19,8 +19,8 @@ emptyKey = keyboard_check(global.emptyKey)
 i = 1
 repeat(10)
 {
-itemKey[i] = keyboard_check_pressed(global.itemKey[i])
-i += 1
+    itemKey[i] = keyboard_check_pressed(global.itemKey[i])
+    i += 1
 }
 
 //Player Lighting Step
@@ -42,24 +42,34 @@ scr_moveControl()
 //Dodge Control
 if dodgeKey = true and canMove = true and sp >= dodgeCost and point_distance(x,y,pointx,pointy) > 5
 {
-scr_dodge()  
+    scr_dodge()  
 }
 
 //Interact
 if interactKey = true
 {
-scr_interact()  
+    scr_interact()  
 }
 
 //Attack
+if lftclickedKey = true
+{
+    if instance_exists(invSlot[invSelect])
+    {
+        with(invSlot[invSelect])
+        {
+            script_execute(use[1],1)
+        }
+    }
+}
 
 //Inventory
 i = 1
-repeat(4)
+repeat(array_length_1d(invSlot)-1)
 {
     if itemKey[i] = true and canAttack = true and canAct = true
     {
-    invSelect = i
+        invSelect = i
     }
 i += 1
 }

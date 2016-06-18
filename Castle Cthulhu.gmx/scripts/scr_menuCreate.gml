@@ -27,6 +27,10 @@ i.text = 'Character Selection'
 
 i = instance_create(32,60,obj_menuButton)
 i.text = 'Investigator' i.number = 5 i.descriptor = 'Replace this button with a character icon and stat screen'
+
+i = instance_create(400,250,obj_menuButton)
+i.text = 'Return'
+i.number = 4
 break
 
 case 2:     //Graveyard
@@ -35,7 +39,7 @@ i.text = 'Graveyard'
 
 //Temp
 
-i = instance_create(544,320,obj_menuButton)
+i = instance_create(400,250,obj_menuButton)
 i.text = 'Return'
 i.number = 4
 break
@@ -53,7 +57,7 @@ i.text = 'Gameplay' i.number = 9
 i = instance_create(32,120,obj_menuButton)
 i.text = 'Keybindings' i.number = 10
 
-i = instance_create(544,320,obj_menuButton)
+i = instance_create(400,250,obj_menuButton)
 i.text = 'Return' i.number = 11
 break
 
@@ -79,7 +83,7 @@ i.text = 'Gameplay' i.number = 9
 i = instance_create(32,190,obj_menuButton)
 i.text = 'Keybindings' i.number = 10
 
-i = instance_create(544,320,obj_menuButton)
+i = instance_create(400,250,obj_menuButton)
 i.text = 'Return'
 i.number = 11
 break
@@ -100,7 +104,7 @@ i.text = 'Frame Rate' i.number = 4
 i = instance_create(32,150,obj_menuButton)
 i.text = 'Keybindings' i.number = 10
 
-i = instance_create(544,320,obj_menuButton)
+i = instance_create(400,250,obj_menuButton)
 i.text = 'Return' i.number = 11
 break
 
@@ -129,7 +133,7 @@ i.text = 'Other' i.number = 13 i.font = fnt_smlMenu
 scr_keybindCreate(1)
 
 
-i = instance_create(544,320,obj_menuButton)
+i = instance_create(400,250,obj_menuButton)
 i.text = 'Return' i.number = 11
 break
 
@@ -158,7 +162,7 @@ i.text = 'Other' i.number = 13 i.font = fnt_smlMenu
 scr_keybindCreate(2)
 
 
-i = instance_create(544,320,obj_menuButton)
+i = instance_create(400,250,obj_menuButton)
 i.text = 'Return' i.number = 11
 break
 
@@ -187,7 +191,7 @@ i.text = 'Other' i.number = 20 i.font = fnt_smlMenu
 scr_keybindCreate(3)
 
 
-i = instance_create(544,320,obj_menuButton)
+i = instance_create(400,250,obj_menuButton)
 i.text = 'Return' i.number = 11
 break
 }

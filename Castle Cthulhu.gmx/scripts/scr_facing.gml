@@ -1,7 +1,7 @@
 //Facing
 targetX = mouse_x
 targetY = mouse_y
-facing = round(scr_rotate(facing,point_direction(x,y,mouse_x,mouse_y),15)/15)*15
+facing = scr_rotate(facing,point_direction(x,y,mouse_x,mouse_y),(360*turnSpeed)/global.frameRate)
 
 if targetY < y
 {

@@ -62,5 +62,6 @@ itemHeight = 8
 itemRot = 0
 
 //Combat
+turnSpeed = 3
 kick = 0
 dodgeCost = 1

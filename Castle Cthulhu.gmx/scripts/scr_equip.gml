@@ -5,12 +5,11 @@ repeat(array_length_1d(argument0.invSlot)-1)
 {
     if argument0.invSlot[i] = -4 and ii = false
     {
-        argument0.invSlot[i] = id
-        
         iii = instance_create(x,y,obj_itemCarried)
         ii = true
         iii.slot = i
         iii.owner = argument0
+        argument0.invSlot[i] = iii
         global.item = itemType
         
         with(iii)

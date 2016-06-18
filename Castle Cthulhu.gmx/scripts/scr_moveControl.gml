@@ -34,5 +34,8 @@ if canMove = true and grounded = true
     {
         vspd = min(moveT,vspd+(moveT*accel))
     }
+    
+    hspd = lengthdir_x(min(moveT,point_distance(0,0,hspd,vspd)),point_direction(0,0,hspd,vspd))
+    vspd = lengthdir_y(min(moveT,point_distance(0,0,hspd,vspd)),point_direction(0,0,hspd,vspd))
 }
 

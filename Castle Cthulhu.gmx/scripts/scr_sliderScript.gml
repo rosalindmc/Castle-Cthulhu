@@ -39,11 +39,7 @@ case 3:     //Draw
     else scr_drawText(c_gray,c_white,x+220,y,string(round(100*global.ambienceVolume))+'%') break
     
     case 4: 
-    if global.frameRate = 10
-        scr_drawText(c_gray,c_white,x+220,y,'Console Peasant') 
-    else
-        scr_drawText(c_gray,c_white,x+220,y,string(global.frameRate)+' FPS') 
-    break
+    scr_drawText(c_gray,c_white,x+220,y,string(global.frameRate)+' FPS') 
     }
 break
 }

@@ -1,5 +1,5 @@
 animStep[0] += sign(moving)
-alarm[0] = global.frameRate*(.3/max(1,abs(moving)))
+alarm[0] = (global.frameRate*.3)/max(1,abs((60*moving)/global.frameRate))
 
 switch(argument0)
 {
